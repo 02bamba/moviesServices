@@ -30,7 +30,7 @@ exports.create = (req, res) => {
 }
 
 exports.findOne = (req, res) => {
-    const id = req.params.id
+    const id = req.params.id;
     Movie.findOne(id)
     .then(data =>{
     if (!data){

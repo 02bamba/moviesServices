@@ -14,4 +14,8 @@ module.exports = app =>{
 
     // Update a Student with id
     router.put("/:id", movies.update);
+    //Delelete all 
+    router.delete("/delete", movies.deleteAll);
+    router.delete("/delete/:id", movies.delete);
+
 }
